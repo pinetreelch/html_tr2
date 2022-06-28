@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+	table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+	}
+	
+	th, td{
+			padding: 10px;
+	}
+	
+</style>
+<title>document</title>
+</head>
+
+<body>
+<!-- 상대경로: 현재 위치 기준
+	 절대경로: 시스템 기준
+	 -->
+<table>
+	<thead>
+		<tr>
+			<th>고양이</th>
+			<th>고양이1</th>
+			<th>고양이2</th>
+			<th>고양이3</th>
+		</tr>
+	</thead>
+	
+	<tr>
+		<th>./image/cat2.png</th>
+		<td>
+		<img src="./image/cat2.png" alt="고양이사진" width="500px"/>width 500px
+		</td>
+			
+		<th>./cat.png</th>
+		<td>
+		<img src="./cat.png" alt="고양이사진" height="500px"/>height 500px
+		</td>	
+	</tr>
+	<tr>
+		<th>../image/cat3.png</th>
+		<td>
+		<img src="../image/cat3.png" alt="고양이사진" width="300px"/>300px
+		</td>
+		
+		<th>물리적 위치, <br>D:\factory\ws_sts_4151\html_tr2\ch01\cat.png</th>
+		<td>
+		<img src="D:\factory\ws_sts_4151\html_tr2\ch01\cat.png" alt="고양이사진" width="500px"/>
+		</td>
+	</tr>
+	
+	<tr>
+	<th>이미지 주소 복사</th>
+	<td height="200px" width="100px">
+	<img src="https://isplus.joins.com/data/photo/202206/28/d3f94356-693f-4822-b6c3-9072fbadfd4f.jpg" alt="로딩실패" />
+	</td>
+	
+	<th></th>
+	<td></td>
+	</tr>
+	
+</table>
+<br /><br />
+
+
+
+
+</body>
+</html>
