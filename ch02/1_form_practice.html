@@ -10,101 +10,147 @@
 	}
 	
 	table{
-		width:700px;
+		width:900px;
 		margin-left: auto;
-		
+		margin-right: auto;
 	}
+	
+	.left{
+	caption-side: left;
+	}
+	
 	
 	body{
    /*  font-size: 1.5vw;
      font-size: 2vh;
      font-size: 1.5vmin; */
-     
      font-size: 12px;
-     
 }
+	
+	span{
+		
+		line-height: 20px;
+	    font-family: 'Hahmlet', serif;
+	    font-size: 11px;
+	    color: BROWN; 
+	
+	}
 
-p{
- /*    line-height: 3vw;
-    line-height: 4vh;
-    line-height: 3.5vmin; */
-    
-     line-height: 20px;
-  
-    
-    
-    font-family: 'Hahmlet', serif;
-    font-size: 10px;
-    color: orange; 
+	p{
+	 /*    line-height: 3vw;
+	    line-height: 4vh;
+	    line-height: 3.5vmin; */
+	    
+	     line-height: 20px;
+
+	    font-family: 'Hahmlet', serif;
+	    font-size: 11px;
+	    color: BROWN; 
+	}
+	
+.button_0 {
+
+background-color: brown; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
+.button_1 {
 
-
+background-color: grey; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 
 
 </style>
+
+
 <title>form practice</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@600&display=swap" rel="stylesheet">
 </head>
 
-<body>
 
-<div class= "a">
-<form action="">
+<body>
+<form action="" id="form">
 	
 	<table>
-	<h3>기본정보</h3> 
+	<caption><h3 style="text-align: left;"> 
+		<img src="./document.png" alt="" width="12px"/>
+		기본정보
+
+		</h3>
+		
+	</caption> 
 		<tr>
-			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔이름</td>
+			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔ 이름</td>
 			<td>
 			<input type="text" name="nameip" id="nameip" />
 			</td>
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔아이디</td>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 아이디</td>
 			<td>
-				<input type="text" name="idip" id="idip" />
+				<input type="text" name="idip_1" id="idip" />
 				<button>✔ 아이디중복확인</button>
-				<p> 💬 6~16자까지 영문자(소문자), 숫자 사용 가능합니다</p>
+				<br><span> 💬 6~16자까지 영문자(소문자), 숫자 사용 가능합니다</span>
 			</td>
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔비밀번호</td>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 비밀번호</td>
 			<td>
 				<input type="password" name="pwdip" id="pwdip" />
-				<p>💬 6~16자까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다. <br> 3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.</p>
+				<br><span>💬 6~16자까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다. <br> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.</span>
 			</td>
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔비밀번호 확인</td>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 비밀번호 확인</td>
 			<td>
 				<input type="password" name="pwdipre" id="pwdipre" />
 			</td>
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔이메일</td>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 이메일</td>
 			<td>
 				<input type="text" name="emailip_1" id="emailip_1" />@
-				<input type="text" name="emailip_2" id="emailip_2" />
-				<select name="" id="">
-					<option value="">메일주소선택</option>
-					<option value="">naver.com</option>
-					<option value="">gmail.com</option>
+				<input type="text" name="emailip_2" id="emailip_2"  />
+				<select name="sel"  onchange="handleOnChange(this)">
+					<option value="none">메일주소선택</option>
+					<option value="naver">naver.com</option>
+					<option value="gmail">gmail.com</option>
 				</select>
+				
+				
 			</td>
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔연락처</td>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 연락처</td>
 			<td>
+				&nbsp;
 				휴대전화
-				<select name="telsel" id="telsel">
+				<select name="telsel" id="telsel" style="width: 50px;">
 					<option value="">010</option>
 					<option value="">011</option>
 					<option value="">019</option>
@@ -114,9 +160,9 @@ p{
 				-
 				<input type="tel" id="tel_2" />
 				<br />
-				
+				&nbsp;
 				일반전화
-				<select name="iltelsel" id="iltelsel">
+				<select name="iltelsel" id="iltelsel" style="width: 50px;">
 					<option value="">선택</option>
 					<option value="">010</option>
 					<option value="">02</option>
@@ -126,20 +172,22 @@ p{
 				-
 				<input type="tel" id="iltel_2" />
 				<br />	
-				<p>💬 연락처는 둘 중 하나만 입력해도 됩니다.</p>
+				<span>💬 연락처는 둘 중 하나만 입력해도 됩니다.</span>
 			</td>
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔우편번호</td>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 우편번호</td>
 			<td>
 				<input type="text" id="address" />	
-				<button>🔍 주소검색</button>
+				<button>
+				<img src="./magni.png" alt="" width="12px"/>
+				 주소검색</button>
 			</td>
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔주소</td>	
+			<td style="text-align:center; background-color: grey; color:white;">✔ 주소</td>	
 			<td>
 				<input type="text" id="address_1" size=50 /> <br /> 
 				<input type="text" id="address_2"  />
@@ -147,13 +195,13 @@ p{
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔정보수신 여부</td>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 정보수신 여부</td>
 			<td>
-				<p>
+				&nbsp;
 				서비스 및 이벤트 소식을
-				<input type="checkbox" id="checkinfo" /> email로 수신하겠습니다.
+				<input type="checkbox" id="checkinfo" /> Email로 수신하겠습니다.
 				<input type="checkbox" id="checkinfo_sms"/>SMS로 수신하겠습니다.				
-				</p>
+				
 			</td>
 		</tr>
 	</table>
@@ -162,9 +210,12 @@ p{
 		
 		
 	<table >
-	<h3>작가정보</h3>
+	<caption>
+	<h3 style="text-align: left;"><img src="./document.png" alt="" width="12px"/>
+	작가정보</h3>
+	</caption>
 		<tr>
-			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔프로필이미지</td>
+			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔ 프로필이미지</td>
 			<td>
 			<button>파일 선택</button>
 			선택된 파일 없음
@@ -172,42 +223,50 @@ p{
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔필명</td>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 필명</td>
 			<td>
-				<input type="text" id="writername" />
-				<p>💬 필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)</p>
+				<input type="text" id="writername" /><br>
+				<span>💬 필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)</span>
 			</td>
 			
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔대표작</td>
+			<td style="text-align:center; background-color: grey; color:white;">대표작</td>
 			<td>
 				<input type="text"  id="resume" />
 			</td>
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔수상내역</td>
+			<td style="text-align:center; background-color: grey; color:white;">수상내역</td>
 			<td>
-				<textarea name="descript" id="descript" cols="auto" rows="auto"></textarea>
-				<p>💬 여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.</p>
+				<textarea 
+				name="descript" id="descript" cols="auto" rows="auto"
+				style="width:570px; height: 200px;"
+				>
+				
+				</textarea>
+				<br />
+				<span>💬 여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.</span>
 			</td>
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔주요작품</td>
+			<td style="text-align:center; background-color: grey; color:white;">주요작품</td>
 			<td>
-				<input type="text" id="work_1" /><input type="text" id="work_2" /><button>삭제</button> <br />
-				<button>삭제</button> 
-				<p>💬 본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다 <br />
-					(역할은 메인작가, 공동작가, 보조작가, 각색,각본 등 본인 역할을 정확히 기재해 주시기 바랍니다.)
-				</p>
+				<input type="text" id="work_1" placeholder="스토리 제목을 입력하세요" size=30 />
+				<input type="text" id="work_2" placeholder="해당 스토리의 역할을 입력하세요"/ size=30>
+				<button>삭제</button> <br />
+				<button>삭제</button> <br />
+				<span>💬 본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다 <br />
+				 &nbsp;&nbsp;	(역할은 메인작가, 공동작가, 보조작가, 각색,각본 등 본인 역할을 정확히 기재해 주시기 바랍니다.)
+				</span>
 			</td>
 		</tr>
 		
 		<tr>
-			<td style="text-align:center; background-color: grey; color:white;">✔작가정보공개설정</td>
+			<td style="text-align:center; background-color: grey; color:white;">작가정보공개설정</td>
 			<td>
 			
 			<input type="radio" name="openornot" id="yes" />
@@ -223,16 +282,18 @@ p{
 
 	
 		<table >
-			<h3>스토리 이용자 정보 입력</h3>
+			<caption><h3 style="text-align: left;">
+			<img src="./document.png" alt="" width="12px"/>
+			스토리 이용자 정보 입력</h3></caption>
 			<tr>
-				<td width="100px" style="text-align:center; background-color: grey; color:white;">✔소속(회사)</td>
+				<td width="100px" style="text-align:center; background-color: grey; color:white;">✔ 소속(회사)</td>
 				<td>
 					<input type="text" id="comp" />
 				</td>
 			</tr>
 			
 			<tr>
-				<td style="text-align:center; background-color: grey; color:white;">✔사업자등록번호</td>
+				<td style="text-align:center; background-color: grey; color:white;">사업자등록번호</td>
 				<td>
 					<input type="text" tpye="number" id="bnum_1" />-
 					<input type="text" tpye="number" id="bnum_2" />-
@@ -241,18 +302,19 @@ p{
 			</tr>
 			
 			<tr>
-				<td style="text-align:center; background-color: grey; color:white;">✔사업자등록증(첨부)</td>
+				<td style="text-align:center; background-color: grey; color:white;">✔ 사업자등록증(첨부)</td>
 				<td>
 					<button>파일선택</button>
 					선택된 파일 없음
-					<p>
-					💬 소석(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 파일만 업로드 가능/ PDF파일 업로드 불가)
-					</p>
-				</td>
+					<br />
+					<span>
+					💬 소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 파일만 업로드 가능/ PDF파일 업로드 불가)
+					</span>
 			</tr>
 			
+
 			<tr>
-				<td style="text-align:center; background-color: grey; color:white;">✔분야</td>
+				<td style="text-align:center; background-color: grey; color:white;">✔ 분야</td>
 				<td>
 					<input type="checkbox" id="category_1" name="cate" />
 					<label for="cate">영화</label>
@@ -280,7 +342,7 @@ p{
 			</tr>
 			
 			<tr>
-				<td style="text-align:center; background-color: grey; color:white;">✔직종</td>
+				<td style="text-align:center; background-color: grey; color:white;">✔ 직종</td>
 				<td>
 					<input type="checkbox" name="job" id="job_1" />
 					<label for="job" id="job1">제직자</label>
@@ -299,26 +361,62 @@ p{
 			</tr>
 			
 			<tr>
-				<td style="text-align:center; background-color: grey; color:white;">✔주요 경력</td>
+				<td style="text-align:center; background-color: grey; color:white;">주요 경력</td>
 				<td>
-					주요경력사항을 등록해 주시기 바랍니다.
-					<p> 💬 (기간,사업내용,담당업무를 입력해 주시기 바랍니다)</p>
+					주요경력사항을 등록해 주시기 바랍니다.<br>
+					<span> 💬 (기간,사업내용,담당업무를 입력해 주시기 바랍니다)</span> <br>
 					
 					<input type="date" placeholder="" />~<input type="date" placeholder="" />
 					<input type="text" placeholder="사업내용을 입력해주세요"/>
 					<input type="text" placeholder="담당업무를 입력해주세요"/>
-					<button>🗑 삭제</button>
+					<button style="border-color: black; border: 3px solid;">
+					<img src="./garbage-can.png" alt="" / width="12px">
+					 삭제</button>
 					<br />
-					<button>+추가</button>
-				
+					<button style="border-color: black; border: 3px solid;">+추가</button>
 				</td>
 			</tr>
 		</table>
+		<br /><br />
 		
+	
+		<center>
+		<input class="button_0" type="button" value="제출" onclick="here();">
+		<button class="button_1"> 취소</button>
+		</center>
+		<div id='result'></div>
 </form>
-</div>
 
+		<script type="text/javascript">
+		function here() {
+			
+	var x1=document.getElementById('idip').value;
+	var x2=document.getElementById('nameip').value;
+	
+	var x3=document.getElementById('emailip_1').value;
+	var x4=document.getElementById('emailip_2').value;
+	
 
-
+		 alert("ID : "+ x1+ "\n"+
+				 "이름 :"+ x2+ "\n"+
+				 "E-mail :"+x3+"@"
+		 				); 
+				
+		}
+		
+		function handleOnChange(e) {
+			  // 선택된 데이터 가져오기
+			 
+			// 선택된 데이터의 텍스트값 가져오기
+			  const text1 = e.options[e.selectedIndex].text;
+			  
+			  console.log(e.options);
+			  
+			  // 선택한 텍스트 출력
+			  document.getElementById('result').innerText
+			    = text1;
+			}
+	</script>
+	
 </body>
 </html>
