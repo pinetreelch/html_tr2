@@ -88,15 +88,14 @@ background-color: grey;
 
 
 <body>
-<form action="" id="form">
+<form action="./result.html" id="form" method="get"> <!-- get을 이용하여 urㅣ에 파라미터 넘기기 -->
 	
 	<table>
-	<caption><h3 style="text-align: left;"> 
+	<caption>
+		<h3 style="text-align: left;"> 
 		<img src="./document.png" alt="" width="12px"/>
 		기본정보
-
 		</h3>
-		
 	</caption> 
 		<tr>
 			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔ 이름</td>
@@ -182,7 +181,8 @@ background-color: grey;
 				<input type="text" id="address" />	
 				<button>
 				<img src="./magni.png" alt="" width="12px"/>
-				 주소검색</button>
+				 주소검색
+				 </button>
 			</td>
 		</tr>
 		
@@ -210,10 +210,14 @@ background-color: grey;
 		
 		
 	<table >
+	
 	<caption>
-	<h3 style="text-align: left;"><img src="./document.png" alt="" width="12px"/>
-	작가정보</h3>
+	<h3 style="text-align: left;">
+	<img src="./document.png" alt="" width="12px"/>
+	작가정보
+	</h3>
 	</caption>
+	
 		<tr>
 			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔ 프로필이미지</td>
 			<td>
@@ -369,66 +373,63 @@ background-color: grey;
 					<input type="date" placeholder="" />~<input type="date" placeholder="" />
 					<input type="text" placeholder="사업내용을 입력해주세요"/>
 					<input type="text" placeholder="담당업무를 입력해주세요"/>
+					
 					<button style="border-color: black; border: 3px solid;">
-					<img src="./garbage-can.png" alt="" / width="12px">
-					 삭제</button>
+					<img src="./garbage-can.png" alt="" / width="12px">삭제
+					</button>
 					<br />
+					
 					<button style="border-color: black; border: 3px solid;">+추가</button>
 				</td>
 			</tr>
 		</table>
 		<br /><br />
-		
 	
 		<center>
-		<input class="button_0" type="button" value="제출" onclick="here1();">
+		<input class="button_0" type="submit" value="제출">
 		<button class="button_1"> 취소</button>
 		</center>
 		<div id='result'></div>
-</form>
+	</form>
 
-
-
-<script type="text/javascript">
-	function here() {
-			
-		var x1=document.getElementById('idip').value;
-		var x2=document.getElementById('nameip').value;
-		
-		var x3=document.getElementById('emailip_1').value;
-		var x4=document.getElementById('emailip_2').value;
-		
+	<script type="text/javascript">
 	
-			 alert("ID : "+ x1+ "\n"+
-					 "이름 :"+ x2+ "\n"+
-					 "E-mail :"+x3+"@"
-			 				); 
-					
+	/* alert로 띄우기 */
+		function here() {  
+				
+			var x1=document.getElementById('idip').value;
+			var x2=document.getElementById('nameip').value;
+			
+			var x3=document.getElementById('emailip_1').value;
+			var x4=document.getElementById('emailip_2').value;
+			
+		
+				 alert("ID : "+ x1+ "\n"+
+						 "이름 :"+ x2+ "\n"+
+						 "E-mail :"+x3+"@"
+				 				); 
+				}
+			
+	/*새창에서 불러오기*/
+		function bankDisplay(frm) {
+				
+			var bank = frm.selectbank.selectedIndex;		 /* 이 속성은 선택된 태그의 index 넘버를 반환해줍니다. ex= value의 0,1,2가 반환됨*/
+				
+			switch(bank){	
+			 case 0:
+			 frm.bank.value='메일주소선택';							/*bank라는 input값에 문자열삽입*/
+			 break;
+			 
+			 case 1:
+				frm.bank.value='naver.com';
+			 break;
+			 
+			 case 2:
+			 frm.bank.value='gmail.com';
+			 break;
 			}
-		
-	function bankDisplay(frm) {
-			
-		var bank = frm.selectbank.selectedIndex;
-			
-		switch(bank){
-		 case 0:
-		 frm.bank.value='메일주소선택';
-		 break;
-		 
-		 case 1:
-			frm.bank.value='naver.com';
-		 break;
-		 
-		 case 2:
-		 frm.bank.value='gmail.com';
-		 break;
-		}
-			return true;
-		}
-	
-	function here1(){
-		document.location.href="1_form.html";
-	}
-	
-</body>
+				return true;
+			}
+		</script>
+	</body>
 </html>
