@@ -134,17 +134,17 @@ background-color: grey;
 			<td style="text-align:center; background-color: grey; color:white;">✔ 이메일</td>
 			<td>
 				<input type="text" name="emailip_1" id="emailip_1" />@
-				<input type="text" name="emailip_2" id="emailip_2"  />
-				<select name="sel"  onchange="handleOnChange(this)">
-					<option value="none">메일주소선택</option>
-					<option value="naver">naver.com</option>
-					<option value="gmail">gmail.com</option>
+				<input type="text" name="bank" id="emailip_2"  />
+				<select name="selectbank"  onchange="bankDisplay(this.form)">
+					<option selected value=0>-메일주소선택-</option>
+					<option value=1>naver.com</option>
+					<option value=2>gmail.com</option>
 				</select>
 				
 				
 			</td>
 		</tr>
-		
+	
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">✔ 연락처</td>
 			<td>
@@ -381,42 +381,54 @@ background-color: grey;
 		
 	
 		<center>
-		<input class="button_0" type="button" value="제출" onclick="here();">
+		<input class="button_0" type="button" value="제출" onclick="here1();">
 		<button class="button_1"> 취소</button>
 		</center>
 		<div id='result'></div>
 </form>
 
-		<script type="text/javascript">
-		function here() {
-			
-	var x1=document.getElementById('idip').value;
-	var x2=document.getElementById('nameip').value;
-	
-	var x3=document.getElementById('emailip_1').value;
-	var x4=document.getElementById('emailip_2').value;
-	
 
-		 alert("ID : "+ x1+ "\n"+
-				 "이름 :"+ x2+ "\n"+
-				 "E-mail :"+x3+"@"
-		 				); 
-				
-		}
+
+<script type="text/javascript">
+	function here() {
+			
+		var x1=document.getElementById('idip').value;
+		var x2=document.getElementById('nameip').value;
 		
-		function handleOnChange(e) {
-			  // 선택된 데이터 가져오기
-			 
-			// 선택된 데이터의 텍스트값 가져오기
-			  const text1 = e.options[e.selectedIndex].text;
-			  
-			  console.log(e.options);
-			  
-			  // 선택한 텍스트 출력
-			  document.getElementById('result').innerText
-			    = text1;
+		var x3=document.getElementById('emailip_1').value;
+		var x4=document.getElementById('emailip_2').value;
+		
+	
+			 alert("ID : "+ x1+ "\n"+
+					 "이름 :"+ x2+ "\n"+
+					 "E-mail :"+x3+"@"
+			 				); 
+					
 			}
-	</script>
+		
+	function bankDisplay(frm) {
+			
+		var bank = frm.selectbank.selectedIndex;
+			
+		switch(bank){
+		 case 0:
+		 frm.bank.value='메일주소선택';
+		 break;
+		 
+		 case 1:
+			frm.bank.value='naver.com';
+		 break;
+		 
+		 case 2:
+		 frm.bank.value='gmail.com';
+		 break;
+		}
+			return true;
+		}
+	
+	function here1(){
+		document.location.href="1_form.html";
+	}
 	
 </body>
 </html>
