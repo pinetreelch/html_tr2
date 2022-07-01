@@ -4,6 +4,7 @@
 <meta charset="uTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
+
 	table, th, td{
 			border: 1px solid black;
 			border-collapse: collapse;
@@ -25,7 +26,7 @@
      font-size: 2vh;
      font-size: 1.5vmin; */
      font-size: 12px;
-}
+	}
 	
 	span{
 		
@@ -48,33 +49,32 @@
 	    color: BROWN; 
 	}
 	
-.button_0 {
-
-background-color: brown; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button_1 {
-
-background-color: grey; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
+	.button_0 {
+	background-color: brown; 
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	
+	.button_1 {
+	background-color: grey; 
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	
 
 
 </style>
@@ -89,21 +89,19 @@ background-color: grey;
 
 <body>
 <form action="./result.html" id="form" method="get"> <!-- get을 이용하여 urㅣ에 파라미터 넘기기 -->
-	
 	<table>
-	<caption>
-		<h3 style="text-align: left;"> 
-		<img src="./document.png" alt="" width="12px"/>
-		기본정보
-		</h3>
-	</caption> 
+		<caption>
+			<h3 style="text-align: left;"> 
+			<img src="./document.png" alt="" width="12px"/>
+			기본정보
+			</h3>
+		</caption> 
 		<tr>
 			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔ 이름</td>
 			<td>
-			<input type="text" name="nameip" id="nameip" />
+				<input type="text" name="nameip" id="nameip" />
 			</td>
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">✔ 아이디</td>
 			<td>
@@ -112,7 +110,6 @@ background-color: grey;
 				<br><span> 💬 6~16자까지 영문자(소문자), 숫자 사용 가능합니다</span>
 			</td>
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">✔ 비밀번호</td>
 			<td>
@@ -121,14 +118,12 @@ background-color: grey;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다.</span>
 			</td>
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">✔ 비밀번호 확인</td>
 			<td>
 				<input type="password" name="pwdipre" id="pwdipre" />
 			</td>
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">✔ 이메일</td>
 			<td>
@@ -139,11 +134,8 @@ background-color: grey;
 					<option value=1>naver.com</option>
 					<option value=2>gmail.com</option>
 				</select>
-				
-				
 			</td>
 		</tr>
-	
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">✔ 연락처</td>
 			<td>
@@ -174,7 +166,6 @@ background-color: grey;
 				<span>💬 연락처는 둘 중 하나만 입력해도 됩니다.</span>
 			</td>
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">✔ 우편번호</td>
 			<td>
@@ -185,7 +176,6 @@ background-color: grey;
 				 </button>
 			</td>
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">✔ 주소</td>	
 			<td>
@@ -201,23 +191,18 @@ background-color: grey;
 				서비스 및 이벤트 소식을
 				<input type="checkbox" id="checkinfo" /> Email로 수신하겠습니다.
 				<input type="checkbox" id="checkinfo_sms"/>SMS로 수신하겠습니다.				
-				
 			</td>
 		</tr>
 	</table>
 	<br />
 	
-		
-		
 	<table >
-	
-	<caption>
-	<h3 style="text-align: left;">
-	<img src="./document.png" alt="" width="12px"/>
-	작가정보
-	</h3>
-	</caption>
-	
+		<caption>
+			<h3 style="text-align: left;">
+			<img src="./document.png" alt="" width="12px"/>
+			작가정보
+			</h3>
+		</caption>
 		<tr>
 			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔ 프로필이미지</td>
 			<td>
@@ -225,37 +210,30 @@ background-color: grey;
 			선택된 파일 없음
 			</td>
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">✔ 필명</td>
 			<td>
 				<input type="text" id="writername" /><br>
 				<span>💬 필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)</span>
 			</td>
-			
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">대표작</td>
 			<td>
 				<input type="text"  id="resume" />
 			</td>
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">수상내역</td>
 			<td>
 				<textarea 
 				name="descript" id="descript" cols="auto" rows="auto"
-				style="width:570px; height: 200px;"
-				>
-				
+				style="width:570px; height: 200px;">
 				</textarea>
 				<br />
 				<span>💬 여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.</span>
 			</td>
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">주요작품</td>
 			<td>
@@ -268,22 +246,17 @@ background-color: grey;
 				</span>
 			</td>
 		</tr>
-		
 		<tr>
 			<td style="text-align:center; background-color: grey; color:white;">작가정보공개설정</td>
 			<td>
-			
 			<input type="radio" name="openornot" id="yes" />
 			<label for="yes">공개</label>
-			
 			<input type="radio" name="openornot" id="no" />
 			<label for="no">비공개</label>
 			</td>
 		</tr>
 	</table>
 	<br />
-	
-
 	
 		<table >
 			<caption><h3 style="text-align: left;">
@@ -295,7 +268,6 @@ background-color: grey;
 					<input type="text" id="comp" />
 				</td>
 			</tr>
-			
 			<tr>
 				<td style="text-align:center; background-color: grey; color:white;">사업자등록번호</td>
 				<td>
@@ -304,7 +276,6 @@ background-color: grey;
 					<input type="text" tpye="number" id="bnum_3" />
 				</td>
 			</tr>
-			
 			<tr>
 				<td style="text-align:center; background-color: grey; color:white;">✔ 사업자등록증(첨부)</td>
 				<td>
@@ -315,76 +286,58 @@ background-color: grey;
 					💬 소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 파일만 업로드 가능/ PDF파일 업로드 불가)
 					</span>
 			</tr>
-			
-
 			<tr>
 				<td style="text-align:center; background-color: grey; color:white;">✔ 분야</td>
 				<td>
 					<input type="checkbox" id="category_1" name="cate" />
 					<label for="cate">영화</label>
-					
 					<input type="checkbox" id="category_2" name="cate" />
 					<label for="cate">방송</label>
-					
 					<input type="checkbox" id="category_3" name="cate" />
 					<label for="cate">출판</label>
-					
 					<input type="checkbox" id="category_4" name="cate" />
 					<label for="cate">공연/예술</label>
-					
 					<input type="checkbox" id="category_5" name="cate" />
 					<label for="cate">투자/배급</label>
-					
 					<input type="checkbox" id="category_6" name="cate" />
 					<label for="cate">캐릭터/애니메이션</label>
-					
 					<input type="checkbox" id="category_7" name="cate" />
 					<label for="cate">기타</label>
-					
 					<input type="text" />
 				</td>
 			</tr>
-			
 			<tr>
 				<td style="text-align:center; background-color: grey; color:white;">✔ 직종</td>
 				<td>
 					<input type="checkbox" name="job" id="job_1" />
 					<label for="job" id="job1">제직자</label>
-					
 					<input type="checkbox" name="job" id="job_2" />
 					<label for="job" id="job2">투자자</label>
-					
 					<input type="checkbox" name="job" id="job_3" />
 					<label for="job" id="job3">에이전트</label>
-					
 					<input type="checkbox" name="job" id="job_4" />
 					<label for="job" id="job4">기타</label>
-					
 					<input type="text" />
 				</td>
 			</tr>
-			
 			<tr>
 				<td style="text-align:center; background-color: grey; color:white;">주요 경력</td>
 				<td>
 					주요경력사항을 등록해 주시기 바랍니다.<br>
 					<span> 💬 (기간,사업내용,담당업무를 입력해 주시기 바랍니다)</span> <br>
-					
 					<input type="date" placeholder="" />~<input type="date" placeholder="" />
 					<input type="text" placeholder="사업내용을 입력해주세요"/>
 					<input type="text" placeholder="담당업무를 입력해주세요"/>
-					
 					<button style="border-color: black; border: 3px solid;">
 					<img src="./garbage-can.png" alt="" / width="12px">삭제
 					</button>
 					<br />
-					
 					<button style="border-color: black; border: 3px solid;">+추가</button>
 				</td>
 			</tr>
 		</table>
 		<br /><br />
-	
+		
 		<center>
 		<input class="button_0" type="submit" value="제출">
 		<button class="button_1"> 취소</button>
