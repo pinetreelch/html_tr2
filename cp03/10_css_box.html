@@ -14,7 +14,15 @@
 	}
 	
 	div, ul, li{
-			display: inline; 
+			display: inline;
+				/* display: inline-block; (훨씬 많이 사용됨) */ 
+	}
+	
+	span{
+		display: block; 
+		width: 100px;
+		height: 50px;
+		text-align: center; 
 	}
 	
 </style>
@@ -24,18 +32,25 @@
 <body>
 
 
-<div style="background-color: red;">원영</div>
-<div style="background-color: blue">지원</div>
+		<div style="background-color: red;">원영</div>
+		<div style="background-color: blue">지원</div>
+		
+		<hr />
+		
+		<div style="background-color: red; width: 100px;">지영</div>
+		<div style="background-color: blue; height: 200px">원영</div>
+		<br />
+		<ul style="background-color: red">
+			<li style="background-color: grey">중앙</li>
+			<li>현지</li>
+		</ul>
 
-<hr />
-
-<div style="background-color: red; width: 100px;">지영</div>
-<div style="background-color: blue; height: 200px">원영</div>
-
-<ul style="background-color: red">
-	<li style="background-color: grey">중앙</li>
-	<li>현지</li>
-</ul>
+------->
+<br /><br />
+		<span style="background-color: red">1</span>
+		<span style="background-color: blue">2</span>
+		<span style="background-color: green">3</span>
+		<span style="background-color: grey">4</span>	
 
 
 </body>

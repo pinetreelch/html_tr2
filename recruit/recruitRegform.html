@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+		<link href="./css/cssMod.css" rel="stylesheet" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@600&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<h1 style="text-align:center;"></h1>
+	<h1 style="text-align:center;">&nbsp;</h1>
+	<div class="titlepage"><span class="titlespan">새로운 이력서</span></div>
+	<br>
+	<h1 style="text-align:center;">&nbsp;</h1>
+	
+	<form action="">
+		<div class="divst">
+		<table class="table">
+		<tr>
+			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔ 이름</td>
+			<td>
+				<input type="text" name="nameip" id="nameip" value="" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 한문</td>
+			<td>
+				<input type="text" name="idip_1" id="idip" value=" " />
+			</td>
+		</tr>
+		<tr>
+			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔ 영문</td>
+			<td>
+				<input type="text" name="nameip" id="nameip" value="  " />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 생년월일</td>
+			<td>
+				<input type="date" placeholder="" />~<input type="date" placeholder="" />
+			</td>
+		</tr>
+
+		<tr>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 연락처</td>
+			<td>
+				&nbsp;
+				휴대전화
+				<select name="telsel" id="telsel" style="width: 50px;">
+					<option value="">010</option>
+					<option value="">011</option>
+					<option value="">019</option>
+				</select>
+				-
+				<input type="tel" id="tel_1" value=""/>
+				-
+				<input type="tel" id="tel_2" value="" />
+				<br />
+				&nbsp;
+				비상연락망
+				<select name="iltelsel" id="iltelsel" style="width: 50px;">
+					<option value="">선택</option>
+					<option selected value="">010</option>
+					<option value="">02</option>
+				</select>
+				-
+				<input type="tel" id="iltel_1" />
+				-
+				<input type="tel" id="iltel_2" />
+				<br />	
+				<span class="spana">💬 연락처는 둘 중 하나만 입력해도 됩니다.</span>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 이메일</td>
+			<td>
+				<input type="text" name="emailip_1" id="emailip_1" value="" />@
+				<input type="text" name="bank" id="emailip_2" value="" />
+				<select name="selectbank"  onchange="bankDisplay(this.form)">
+					<option selected value=0>-메일주소선택-</option>
+					<option value=1>naver.com</option>
+					<option value=2>gmail.com</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 나이</td>	
+			<td>
+				<input type="number" id="address_1" size=50  value=""/> <br /> 
+				
+			</td>
+		</tr>
+		
+		<tr>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 주소</td>	
+			<td>
+				<input type="text" id="address_1" size=50 value="서울시 서초구" /> <br /> 
+				<input type="text" id="address_2" value="반포대로28길 70 1층" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center; background-color: grey; color:white;">✔ 취미생활</td>	
+			<td>
+				<input type="text" id="address_1" size=50  value=""/> <br /> 
+				
+			</td>
+		</tr>
+		
+	</table>
+	</div>
+	<br />
+	</form>
+	
+			<center>
+		<button class="button_2"  onclick="location.href='recruiteView.html'">저장</button>
+		<button class="button_1"  onclick="location.href='recruiteList.html'"> 취소</button>
+		<center>
+	
+</body>
+</html>

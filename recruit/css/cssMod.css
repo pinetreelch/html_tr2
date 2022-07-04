@@ -1,0 +1,116 @@
+body{
+	background-image: url('../image/wallpaper.jpg');
+}
+
+.titlepage{
+	color: black; 
+	text-align: center; 
+	font-size: 50px;
+	
+}
+
+.titlespan
+	{
+	border: solid;
+	border-color: grey;
+	border-width: 5px;
+	border-radius: 5px;
+	padding: 15px;
+	background-color: white;
+	}
+	
+.table
+	{
+	color: black;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+	border-collapse: collapse;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	width:1000px;
+	}
+
+th{
+	color: black;
+	border: solid;
+	background-color:white;
+	border-color: black;
+	border-width: 1px;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+td{
+		color: black;
+	border: solid;
+	background-color:white;
+	border-color: black;
+	border-width: 1px;
+	height: 50px;
+	text-align: left;
+	vertical-align: middle;
+	
+}
+
+	.button_0 {
+	background-color: brown; 
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	
+	.button_1 {
+	background-color: grey; 
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	
+		.button_2 {
+	background-color: green; 
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+	}
+	
+		p{
+	 /*    line-height: 3vw;
+	    line-height: 4vh;
+	    line-height: 3.5vmin; */
+	    
+	     line-height: 20px;
+
+	    font-family: 'Hahmlet', serif;
+	    font-size: 11px;
+	    color: BROWN; 
+	}
+	
+		.spana{
+		
+		line-height: 20px;
+	    font-family: 'Hahmlet', serif;
+	    font-size: 11px;
+	    color: BROWN; 
+	}
+	
