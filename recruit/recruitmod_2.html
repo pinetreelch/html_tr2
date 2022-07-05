@@ -86,17 +86,17 @@
 			<tbody>
 				<tr>
 					<td><input type="month" placeholder="" value='2017-08' />~<input type="month" placeholder="" value="2021-02"/></td>
-					<td><input type="text" name="nameip" id="nameip" value="" /></td>
+					<td><input type="text" name="nameip" id="nameip" value="00대학교" /></td>
 					<td>졸업</td>
-					<td><input type="text" name="nameip" id="nameip" value="" />과</td>
-					<td><input type="text" name="nameip" id="nameip" value="-선택사항-" /></td>
+					<td><input type="text" name="nameip" id="nameip" value="00" />과</td>
+					<td><input type="text" name="nameip" id="nameip" value="서울" /></td>
 				</tr>
 				<tr>
-					<td><input type="month" placeholder="" />~<input type="date" placeholder="" /></td>
-					<td><input type="text" name="nameip" id="nameip" value="" /></td>
+					<td><input type="month" placeholder="" value='2014-03' />~<input type="month" placeholder="" value='2017-02'/></td>
+					<td><input type="text" name="nameip" id="nameip" value="00고등학교" /></td>
 					<td>졸업</td>
 					<td>-</td>
-					<td><input type="text" name="nameip" id="nameip" value="-선택사항-" /></td>
+					<td><input type="text" name="nameip" id="nameip" value="서울" /></td>
 				</tr>
 			</tbody>
 		</table>
@@ -113,12 +113,12 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td><input type="date" placeholder="" />~<input type="date" placeholder="" /></td>
+					<td><input type="month" placeholder="" value='2021-12'/>~<input type="month" placeholder="" value='2022-06'/></td>
 					<td>
-						<input type="text" name="nameip" id="nameip" value="" />
+						<textarea type="text" name="nameip" id="nameip" rows="3" cols="30">"<주> 이젠 아카데미 (서울 강남역 본원) 국가기간전략산업직종 훈련"</textarea> 
 					</td>
 					<td>
-						<input type="text" name="nameip" id="nameip" value="" />
+						<textarea name="nameip" id="nameip" rows="10" cols="30">"open API활용 자바 안드로이드 웹&앱 개발자: JAVA,JAVASCRIPT, JQUERY,JSP, SPRING, HTML, CSS, GIT, Bootstrap, JSTL, AJAX POSTMAN AWS TOMCAT, 등을 공부하여 자바를 이용한 웹 프로그래밍 역량을 키웠습니다." </textarea>
 					</td>
 				</tr>
 			</tbody>
@@ -136,15 +136,15 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td><input type="date" placeholder="" /></td>
-					<td><input type="text" name="nameip" id="nameip" value="" /></td>
-					<td><input type="text" name="nameip" id="nameip" value="" /></td>
+					<td><input type="month" placeholder="" value='2021-08'/></td>
+					<td><input type="text" name="nameip" id="nameip" value="워드프로세서 1급" /></td>
+					<td><input type="text" name="nameip" id="nameip" value=대한상공회의소"" /></td>
 					<td><input type="text" name="nameip" id="nameip" value="" /></td>
 				</tr>
 				<tr>
-					<td><input type="date" placeholder="" /></td>
-					<td><input type="text" name="nameip" id="nameip" value="" /></td>
-					<td><input type="text" name="nameip" id="nameip" value="" /></td>
+					<td><input type="month" placeholder="" value='2021-06' /></td>
+					<td><input type="text" name="nameip" id="nameip" value=정보처리기사"" /></td>
+					<td><input type="text" name="nameip" id="nameip" value="한국산업인력공단" /></td>
 					<td><input type="text" name="nameip" id="nameip" value="" /></td>
 				</tr>
 			</tbody>
@@ -187,7 +187,7 @@
 		<br />
 		<center>
 		
-		<button class="button_2"  onclick="location.href='recruiteView.html'">수정</button>
+		<button class="button_0"  onclick="location.href='recruiteView.html'">완료</button>
 		<button class="button_1"  onclick="location.href='recruiteList.html'"> 취소</button>
 		<center>
 		
@@ -197,7 +197,7 @@
 function setData(){
 	
 	const urlSearchParams = new URLSearchParams(window.location.search);
-	const myName = urlSearchParams.get('nameip');
+	const myName = urlSearchParams.get(ㄴ'nameip');
 	document.getElementById('myDiv').innerHTML = myName
 }
 </script>
