@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>input</title>
+</head>
+<body>
+	<form id="form" action="receive.html" method="get">
+		Name: <input type="text" id="sendname" name="iname" />
+		<input type="submit" value="제출" onclick="submitForm()">
+	</form>
+</body>
+
+<script>
+	function submitForm(){
+		if(typeof(localStorage)!= "undefined"){
+				localStorage.name= document.getElementById("iname").value;
+		} 
+		document.getElementById("form").submit();
+	}
+</script>
+</html>

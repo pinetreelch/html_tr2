@@ -15,7 +15,7 @@
 	<br>
 	<h1 style="text-align:center;">&nbsp;</h1>
 	
-	<form action="">
+	<form id="form" action="recruiteView.html" method="get">
 		<table class="table">
 		<tr>
 			<td width="120px" style="text-align:center; background-color: grey; color:white;">✔ 이름</td>
@@ -109,12 +109,22 @@
 		
 	</table>
 	<br />
-	</form>
-	
-			<center>
-		<button class="button_2"  onclick="location.href='recruiteView.html'">저장</button>
+				<center>
+		<input class="button_2" type="submit" value="저장">
 		<button class="button_1"  onclick="location.href='recruiteList.html'"> 취소</button>
 		<center>
 	
+	</form>
+	
+
 </body>
+
+<script>
+	function submitForm(){
+		if(typeof(localStorage)!= "undefined"){
+				localStorage.name= document.getElementById("nameip").value;
+		} 
+		document.getElementById("form").submit();
+	}
+</script>
 </html>

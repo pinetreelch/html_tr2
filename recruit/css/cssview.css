@@ -32,7 +32,21 @@ body{
 	width:1000px;
 	}
 
-th, td{
+th {
+	
+	color: black;
+	border: solid;
+	background-color: #D6C9F7;
+	border-color: black;
+	border-width: 1px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+td{
 	color: black;
 	border: solid;
 	background-color:white;
@@ -46,6 +60,7 @@ th, td{
 	.button_0 {
 	background-color: brown; 
 	  border: none;
+	  border-radius: 30px;
 	  color: white;
 	  padding: 15px 32px;
 	  text-align: center;
@@ -59,6 +74,7 @@ th, td{
 	.button_1 {
 	background-color: grey; 
 	  border: none;
+	  border-radius: 30px;
 	  color: white;
 	  padding: 15px 32px;
 	  text-align: center;
@@ -72,6 +88,7 @@ th, td{
 		.button_2 {
 	background-color: green; 
 	  border: none;
+	  border-radius: 30px;
 	  color: white;
 	  padding: 15px 32px;
 	  text-align: center;
@@ -109,5 +126,15 @@ th, td{
 		border-radius: 30px;
 		padding: 20px;
 		margin: 10px 400px;
+		}
+		
+		.innerspan{
+		border: solid;
+		border-width: 5px;
+		border-color: grey;
+		border-radius: 30px;
+		color: white; 
+		background-color: grey; 
+		font-size: 20px;
 		
 		}

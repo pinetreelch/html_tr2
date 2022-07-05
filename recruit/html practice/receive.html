@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body onload="setData()">
+<p id="show">
+<div id= 'myDiv'> Name: </div>
+</p>
+
+<script>
+	function setData(){
+	
+		var name = window.location.href.split("?iname=")[1].split("+").join(" ");
+        var fieldNameElement = document.getElementById('myDiv');
+        var oldText=fieldNameElement.innerHTML;
+        fieldNameElement.innerHTML = ' '+name;
+	}
+</script>
+</body>
+</html>

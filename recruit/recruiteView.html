@@ -5,7 +5,7 @@
 	<link href="./css/cssview.css" rel="stylesheet" type="text/css" />
 	<title>recruitView</title>
 </head>
-<body>
+<body onload="setData()">
 	<h1 style="text-align:center;"></h1>
 	<h1 style="text-align:center;">&nbsp;</h1>
 	<div class="titlepage"><span class="titlespan">View mode</span></div>
@@ -18,7 +18,7 @@
 			<td rowspan="6" width="100px" ><img src="./image/photo.jpg" alt="" width="300px" /></td>
 			<!-- <td width="100px"></td> -->
 			<td > <b>성명</b></td>
-			<td >고경호</td>
+			<td> <div id='myDiv'>고경호</div></td>
 			<td > <b>한문</b></center></td>
 			<td >고경호(한문)</td>
 		</tr>
@@ -62,15 +62,133 @@
 			<!-- <td width="100px"></td>
 			<td width="100px"></td>  -->
 		</tr>
-
 </table>
+		<br />
+		
+		<table class="table">
+		<caption style="text-align: left;"><span class="innerspan">◎학력사항◎</span></caption>
+			<thead>
+				<tr>
+					<th>기간</th>
+					<th>출신학교</th>
+					<th>구분</th>
+					<th>학과</th>
+					<th>소재지</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2017.03~2021.02</td>
+					<td>00대학교</td>
+					<td>졸업</td>
+					<td>00과</td>
+					<td>서울</td>
+				</tr>
+				<tr>
+					<td>2014.03~2017.02</td>
+					<td>00고등학교</td>
+					<td>졸업</td>
+					<td>-</td>
+					<td>서울</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		
+		<table class="table">
+		<caption style="text-align: left;"><span class="innerspan">◎교육연수◎</span></caption>
+			<thead>
+				<tr>
+					<th>연수기간</th>
+					<th>연수기관</th>
+					<th>연수과정 및 내용</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2021.12.30~2022.6.22</td>
+					<td>
+						<주>이젠 아카데미 <br />
+							(서울 강남역 본원) <br />
+							국가기간전략산업직종 훈련 
+					</td>
+					<td>
+						Open API활용 자바 안드로이드 웹&앱 개발자 <br />
+						:JAVA,JAVASCRIPT, JQUERY, JSP, SPRING, HTML, CSS, GIT, <br />
+						Bootstrap, JSTL, AJAX POSTMAN AWS TOMCAT, 등을 <br />
+						공부하여 자바를 이용한 웹 프로그래밍 역량을 키웠습니다 
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<table class="table">
+		<caption style="text-align: left;"><span class="innerspan">◎자격사항◎</span></caption>
+			<thead>
+				<tr>
+					<th>취득일</th>
+					<th>종류 및 등급	</th>
+					<th>발행처</th>
+					<th>보유기술 및 수준</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2021.08</td>
+					<td>워드프로세서 1급</td>
+					<td>대한상공회의소</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>2021.06</td>
+					<td>정보처리기사</td>
+					<td>한국산업인력공단</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		
+		<table class="table">
+		<caption style="text-align: left;"><span class="innerspan">◎경력사항◎</span></caption>
+			<thead>
+				<tr>
+					<th>활동기간</th>
+					<th>기관</th>
+					<th>담당업무</th>
+					<th>경력 및 습득역량</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
 </div>
 		<br />
 		<center>
-		<button class="button_0"  onclick="location.href='recruiteList.html'">완료</button>
-		<button class="button_2"  onclick="location.href='recruitModform.html'">수정</button>
+		
+		<button class="button_2"  onclick="location.href='recruitMod_2.html'">수정</button>
 		<button class="button_1"  onclick="location.href='recruiteList.html'"> 취소</button>
 		<center>
 		
 </body>
+
 </html>

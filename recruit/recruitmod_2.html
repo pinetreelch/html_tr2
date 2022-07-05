@@ -5,28 +5,28 @@
 	<link href="./css/cssview.css" rel="stylesheet" type="text/css" />
 	<title>recruitView</title>
 </head>
-<body >
+<body onload="setData()">
 	<h1 style="text-align:center;"></h1>
 	<h1 style="text-align:center;">&nbsp;</h1>
-	<div class="titlepage"><span class="titlespan">Edit mode</span></div>
+	<div class="titlepage"><span class="titlespan">edit mode</span></div>
 	<br>
 	<h1 style="text-align:center;">&nbsp;</h1>
 
 <div class="divst">
 <table class="table">
 		<tr>
-			<td rowspan="6" width="300px" >이미지를 추가해주세요.</td>
+			<td rowspan="6" width="100px" ><img src="./image/photo.jpg" alt="" width="300px" /></td>
 			<!-- <td width="100px"></td> -->
 			<td > <b>성명</b></td>
-			<td> <input type="text" name="nameip" id="nameip" value="" /></td>
+			<td> <input type="text" name="nameip" id="nameip" value="고경호" /></td>
 			<td > <b>한문</b></center></td>
-			<td ><input type="text" name="nameip" id="nameip" value="" /></td>
+			<td ><input type="text" name="nameip" id="nameip" value="고경호(한문)" /></td>
 		</tr>
 		<tr>
 			<!-- <td width="100px" colspan ="2"></td> -->
 			<!-- <td width="100px"></td> -->
 			<td ><b>영문</b></td>
-			<td ><input type="text" name="nameip" id="nameip" value="  " /></td>
+			<td ><input type="text" name="nameip" id="nameip" value="Ko Kyung Ho" /></td>
 			<td ><b>생년월일</b></td>
 			<td ><input type="date" placeholder="" /></td>
 		</tr>
@@ -34,7 +34,7 @@
 		<!-- 	<td width="100px" colspan ="2"></td> -->
 			<!-- <td width="100px"></td> -->
 			<td ><b>전화번호</b></td>
-			<td ><input type="tel" name="nameip" id="nameip" value="" /></td>
+			<td ><input type="tel" name="nameip" id="nameip" value="0107276262" /></td>
 			<td ><b>비상연락망</b></td>
 			<td ><input type="tel" name="nameip" id="nameip" value="-" /></td>
 		</tr>
@@ -42,7 +42,7 @@
 			<!-- <td width="100px" colspan ="2"></td> -->
 			<!-- <td width="100px"></td> -->
 			<td ><b>전자우편</b></td>
-			<td>				<input type="text" name="emailip_1" id="emailip_1" value="" />@
+			<td>				<input type="text" name="emailip_1" id="emailip_1" value="dsfsefs" />@
 				<input type="text" name="bank" id="emailip_2" value="gmail.com" />
 				<select name="selectbank"  onchange="bankDisplay(this.form)">
 					<option selected value=0>-메일주소선택-</option>
@@ -50,14 +50,14 @@
 					<option value=2>gmail.com</option>
 				</select></td>
 			<td><b>나이</b></td>
-			<td ><input type="number" id="address_1" size=50  value=""/></td>
+			<td ><input type="number" id="address_1" size=50  value="37"/></td>
 		</tr>
 			<tr>
 			<!-- <td width="100px" colspan ="2"></td> -->
 			<!-- <td width="100px"></td> -->
 			<td ><b>주소</b></td>
-			<td colspan="3"> <input type="text" id="address_1" size=50 value=" " /> <br /> 
-				<input type="text" id="address_2" value="" />	</td>
+			<td colspan="3"> <input type="text" id="address_1" size=50 value="서울시 서초구" /> <br /> 
+				<input type="text" id="address_2" value="반포대로28길 70 1층" />	</td>
 			<!-- <td width="100px"></td>
 			<td width="100px"></td>  -->
 		</tr>
@@ -85,14 +85,14 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td><input type="date" placeholder="" value='' />~<input type="date" placeholder="" /></td>
+					<td><input type="month" placeholder="" value='2017-08' />~<input type="month" placeholder="" value="2021-02"/></td>
 					<td><input type="text" name="nameip" id="nameip" value="" /></td>
 					<td>졸업</td>
 					<td><input type="text" name="nameip" id="nameip" value="" />과</td>
 					<td><input type="text" name="nameip" id="nameip" value="-선택사항-" /></td>
 				</tr>
 				<tr>
-					<td><input type="date" placeholder="" />~<input type="date" placeholder="" /></td>
+					<td><input type="month" placeholder="" />~<input type="date" placeholder="" /></td>
 					<td><input type="text" name="nameip" id="nameip" value="" /></td>
 					<td>졸업</td>
 					<td>-</td>
@@ -187,10 +187,18 @@
 		<br />
 		<center>
 		
+		<button class="button_2"  onclick="location.href='recruiteView.html'">수정</button>
 		<button class="button_1"  onclick="location.href='recruiteList.html'"> 취소</button>
 		<center>
 		
 </body>
 
-
+<script>
+function setData(){
+	
+	const urlSearchParams = new URLSearchParams(window.location.search);
+	const myName = urlSearchParams.get('nameip');
+	document.getElementById('myDiv').innerHTML = myName
+}
+</script>
 </html>
