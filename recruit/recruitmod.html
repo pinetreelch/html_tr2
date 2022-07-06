@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8" />
 	<link href="./css/cssview.css" rel="stylesheet" type="text/css" />
-	<title>recruitView</title>
+	<script defer src="./javascript.js"></script>
+	<title>recruitMod</title>
 </head>
 <body onload="setData()">
 	<h1 style="text-align:center;"></h1>
 	<h1 style="text-align:center;">&nbsp;</h1>
-	<div class="titlepage"><span class="titlespan">edit mode</span></div>
+	<div class="titlepage"><span class="titlespan">Edit mode</span></div>
 	<br>
 	<h1 style="text-align:center;">&nbsp;</h1>
 
@@ -28,7 +29,7 @@
 			<td ><b>영문</b></td>
 			<td style="text-align:left;"><input type="text" name="nameip" id="nameip" value="Ko Kyung Ho" /></td>
 			<td ><b>생년월일</b></td>
-			<td style="text-align:left;"><input type="date" placeholder="" /></td>
+			<td style="text-align:left;"><input type="date" placeholder="" value="1987-02-15"/></td>
 		</tr>
 		<tr>
 		<!-- 	<td width="100px" colspan ="2"></td> -->
@@ -83,25 +84,38 @@
 					<th>소재지</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody id="tblshow">
 				<tr>
 					<td><input type="month" placeholder="" value='2017-08' />~<input type="month" placeholder="" value="2021-02"/></td>
 					<td><input type="text" name="nameip" id="nameip" value="00대학교" /></td>
-					<td>졸업</td>
+					<td><input type="text" name="nameip" id="nameip" value="졸업" /></td>
 					<td><input type="text" name="nameip" id="nameip" value="00" />과</td>
 					<td><input type="text" name="nameip" id="nameip" value="서울" /></td>
 				</tr>
 				<tr>
 					<td><input type="month" placeholder="" value='2014-03' />~<input type="month" placeholder="" value='2017-02'/></td>
 					<td><input type="text" name="nameip" id="nameip" value="00고등학교" /></td>
-					<td>졸업</td>
+					<td><input type="text" name="nameip" id="nameip" value="졸업" /></td>
 					<td>-</td>
 					<td><input type="text" name="nameip" id="nameip" value="서울" /></td>
 				</tr>
 			</tbody>
 		</table>
-		<br />
 		
+		<div style="text-align: right;">
+		<div class="filebox bs3-primary">
+		<label for="button11">행 추가</label>
+		<button style="display: none;" onclick="add_row()" id="button11"></button>
+		</div>
+		
+		
+		<div class="filebox bs3-success label">
+		<label for="button22">행 삭제</label>
+		<button style="display : none;" onclick="delete_row()" id="button22"></button>
+		</div>
+		</div>
+		<br />
+		<br />
 		<table class="table">
 		<caption style="text-align: left;"><span class="innerspan">◎교육연수◎</span></caption>
 			<thead>

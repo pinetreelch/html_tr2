@@ -8,41 +8,47 @@
 <body >
 	<h1 style="text-align:center;"></h1>
 	<h1 style="text-align:center;">&nbsp;</h1>
-	<div class="titlepage"><span class="titlespan">Edit mode</span></div>
+	<div class="titlepage"><span class="titlespan">Add page</span></div>
 	<br>
 	<h1 style="text-align:center;">&nbsp;</h1>
 
 <div class="divst">
 <table class="table">
 		<tr>
-			<td rowspan="6" width="300px" >이미지를 추가해주세요.</td>
+			<td rowspan="6" width="300px" style="border: solid; border-width: 5px; border-color:grey;" >이미지를 추가해주세요. <br /> <br />
+				<div class="filebox bs3-primary">
+				<label for="ex_file2">업로드</label>
+				<input type="file" id="ex_file2"/>
+				</div>
+			</td>
 			<!-- <td width="100px"></td> -->
 			<td > <b>성명</b></td>
-			<td> <input type="text" name="nameip" id="nameip" value="" /></td>
+			<td style="text-align: left"> <input type="text" name="nameip" id="nameip" value="" /></td>
 			<td > <b>한문</b></center></td>
-			<td ><input type="text" name="nameip" id="nameip" value="" /></td>
+			<td style="text-align: left"><input type="text" name="nameip" id="nameip" value="" /></td>
 		</tr>
 		<tr>
 			<!-- <td width="100px" colspan ="2"></td> -->
 			<!-- <td width="100px"></td> -->
 			<td ><b>영문</b></td>
-			<td ><input type="text" name="nameip" id="nameip" value="  " /></td>
+			<td style="text-align: left"><input type="text" name="nameip" id="nameip" value="  " /></td>
 			<td ><b>생년월일</b></td>
-			<td ><input type="date" placeholder="" /></td>
+			<td style="text-align: left"><input type="date" placeholder="" /></td>
 		</tr>
 		<tr>
 		<!-- 	<td width="100px" colspan ="2"></td> -->
 			<!-- <td width="100px"></td> -->
 			<td ><b>전화번호</b></td>
-			<td ><input type="tel" name="nameip" id="nameip" value="" /></td>
+			<td style="text-align: left"><input type="tel" name="nameip" id="nameip" value="" /></td>
 			<td ><b>비상연락망</b></td>
-			<td ><input type="tel" name="nameip" id="nameip" value="-" /></td>
+			<td style="text-align: left"><input type="tel" name="nameip" id="nameip" value="-" /></td>
 		</tr>
 			<tr>
 			<!-- <td width="100px" colspan ="2"></td> -->
 			<!-- <td width="100px"></td> -->
 			<td ><b>전자우편</b></td>
-			<td>				<input type="text" name="emailip_1" id="emailip_1" value="" />@
+			<td style="text-align: left">
+				<input type="text" name="emailip_1" id="emailip_1" value="" />@
 				<input type="text" name="bank" id="emailip_2" value="gmail.com" />
 				<select name="selectbank"  onchange="bankDisplay(this.form)">
 					<option selected value=0>-메일주소선택-</option>
@@ -50,14 +56,16 @@
 					<option value=2>gmail.com</option>
 				</select></td>
 			<td><b>나이</b></td>
-			<td ><input type="number" id="address_1" size=50  value=""/></td>
+			<td style="text-align: left"><input type="number" id="address_1" size=50  value=""/></td>
 		</tr>
 			<tr>
 			<!-- <td width="100px" colspan ="2"></td> -->
 			<!-- <td width="100px"></td> -->
 			<td ><b>주소</b></td>
-			<td colspan="3"> <input type="text" id="address_1" size=50 value=" " /> <br /> 
-				<input type="text" id="address_2" value="" />	</td>
+			<td colspan="3" style="text-align: left"> 
+				<input type="text" id="address_1" size=50 value=" " /> <br /> 
+				<input type="text" id="address_2" value="" />	
+			</td>
 			<!-- <td width="100px"></td>
 			<td width="100px"></td>  -->
 		</tr>
@@ -65,10 +73,11 @@
 		<!--<td width="100px" colspan ="2"></td> 
 			 <td width="100px"></td> -->
 			<td><b>취미생활</b></td>
-			 <td colspan="3" ><input type="text" name="nameip" id="nameip" value="-선택사항-" /></td>
+			 <td colspan="3" style="text-align: left" ><input type="text" name="nameip" id="nameip" value="-선택사항-" /></td>
 			<!-- <td width="100px"></td>
 			<td width="100px"></td>  -->
 		</tr>
+		
 </table>
 		<br />
 		
