@@ -11,6 +11,7 @@
 	#gnv{ 
 		background-color: #BDBDBD;
 		height:10%;
+		clear: both;
 	}
 	#sidebar{
 		background-color: white;
@@ -19,6 +20,7 @@
 		width: 10%; 
 	}
 	#content{
+	
 		background-color: white; 
 		float:left; 
 		height: auto 30%;
@@ -29,6 +31,12 @@
 		background-color: white;
 		height:auto 30%;
 		width: 10%;
+	}
+	#sideedgebox{
+		border: solid;
+		border-width: 1px;
+		border-color: gray;
+		text-align: center;
 	}
 	#tableid{
 		background-color: white;
@@ -62,38 +70,97 @@
 	#p1{
 		text-align: center;
 		font-size: 30px;  
+		height: 100px;
 	}
 	#clear{
 		clear: both;
 	}
 	
 	li{
-	  margin: 15px 0;
-	  list-style-type: circle;
+		margin: 15px 0;
+		list-style-type: circle;
+	}
+	header{
+		background-color: white;
+		border-bottom: 1px solid lightgray;
+		
 	}
 
+	.clearfix::after{
+		content: "";
+		display: block;
+		 
+	}
+	.menu{
+		float: left; 
+	}
+	.menu-item{
+		float: left;
+		padding: 8px 10px;
+		font-weight: bold;
+	}
+	#login{
+		float: right;
+		padding: 8px 10px;
+		font-weight: bold;
+	}
+	
+	.myButton {
+	
+	float: right; 
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #dcdcdc; 
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial; 
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+	
 	</style>
 </head>
 <body>
+	<div id="header">
+		
+			<div>
+				<div class="menu-item"  onmouseover="this.style.background='#E3F6CE';" onMouseout= "this.style.background='white';" >personal</div>
+				<div class="menu-item"  onmouseover="this.style.background='#E3F6CE';" onMouseout= "this.style.background='white';" >Open source</div>
+				<div class="menu-item"  onmouseover="this.style.background='#E3F6CE';" onMouseout= "this.style.background='white';" >Business</div>
+				<div class="menu-item"  onmouseover="this.style.background='#E3F6CE';" onMouseout= "this.style.background='white';" >Explore</div>
+				<a href="#" class="myButton">로그아웃</a>
+				<a href="#" class="myButton">로그인</a>
+			</div>
+	</div>	
+	
 	<div id="gnv">
-	<p id="p1">GNV</p>
-	<button style="float: right; width: 80px;">회원가입</button>
-	<button style="float: right; width: 80px;">로그인</button>
+		<p id="p1">GNV</p>
+		<div id="clear"></div>	
 	</div>
 	
-	<div id="clear"></div>
-	
 	<div id="sidebar">
-
-	<ul>
-		<li>회원 관리</li>
-		<li>사이트 관리</li>
-		<li>시스템 관리</li>
-		<li>커뮤니케이션 관리</li>
-		<li>템플릿 관리</li>
-		<li>로그 관리</li>
-		<li>통계</li>
-	</ul>
+		<ul>
+			<li>회원 관리</li>
+			<li>사이트 관리</li>
+			<li>시스템 관리</li>
+			<li>커뮤니케이션 관리</li>
+			<li>템플릿 관리</li>
+			<li>로그 관리</li>
+			<li>통계</li>
+		</ul>
 	</div>	
 	
 	<div id="content">
@@ -195,13 +262,11 @@
 	</div>	
 	
 	<div id="sideedge">
-	side
+		<div id="sideedgebox">side</div>
 	</div>
 	
 	<div id="bottom">
 		<p>copyright.1230-tony teacher</p>
 	</div>
-	
-	
 </body>
 </html>
