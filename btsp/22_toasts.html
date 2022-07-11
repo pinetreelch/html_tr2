@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Bootstrap demo</title>
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>	
+ <body>
+ <!-- start -->
+
+<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="..." class="rounded me-2" alt="...">
+    <strong class="me-auto">Bootstrap</strong>
+    <small class="text-muted">11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+  </div>
+</div>
+ <hr />
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ <script>
+ const toastTrigger = document.getElementById('liveToastBtn')
+ const toastLiveExample = document.getElementById('liveToast')
+ if (toastTrigger) {
+   toastTrigger.addEventListener('click', () => {
+     const toast = new bootstrap.Toast(toastLiveExample)
+     toast.show()
+   })
+ }
+ </script>
+</body>
+</html>
