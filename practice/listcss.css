@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Hahmlet:wght@600&display=swap');
+
+.admin{
+	
+	
+	font-family: 'Hahmlet', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 38px;
+	
+	color: #FFFFFF;
+}
+
+
+
+.b{
+	position: absolute;
+	width: 111px;
+	height: 43px;
+	left: 120px;
+	top: 22px;
+	
+	font-family: 'Hahmlet', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 38px;
+	
+	color: #FFFFFF;
+}
+
+.sentence{
+	
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+	
+	color: #FFFFFF;
+}
+.circle{
+	position: absolute;
+	left: 558px;
+	top: 99px;
+	
+	width : 162px;
+  height : 82px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}  
+
+.circle1{
+	position: absolute;
+	left: 655px;
+	top: 46px;
+	
+	width : 192px;
+  height : 132px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}  
+.circle2{
+	position: absolute;
+	left: 770px;
+	top: 71px;
+	
+	width : 162px;
+  height : 132px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}  
+
+.circle2{
+	position: absolute;
+	left: 770px;
+	top: 71px;
+	
+	width : 192px;
+	height : 102px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+}
+ 
+.circle3{
+	position: absolute;
+	left: 886px;
+	top: 102px;
+	
+	width : 170px;
+  	height : 68px;
+  	border-radius: 50%;
+ 	background-color: #FFFFFF;
+} 
+.line1{
+	position: absolute;
+width: 501px;
+height: 0px;
+left: 550px;
+top: 145px;
+
+border: 2px solid #476DCC;
+}
+
+.login{
+	
+	border-color: gray;
+	color: gray;
+	font-family: 'Hahmlet', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 20px;
+
+	background: #FFFFFF;
+	border-radius: 5px;
+}
+
+.pagehead{
+	
+	
+
+font-family: 'Hahmlet', serif;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 43px;
+
+color: #000000;
+}
+.pagehead1{
+	
+	
+
+font-family: 'Hahmlet', serif;
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 43px;
+
+color: #000000;
+}
+
+.pagehead2{
+	
+	
+
+font-family: 'Hahmlet', serif;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 43px;
+
+color: #000000;
+}
+
+.searchcat{
+	
+		
+	
+	font-family:'Hahmlet', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000000;
+	
+}
+.bg {
+	
+	background-color: #D9D9D9;
+}
+.navtext{
+	
+	font-family: 'Hahmlet', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 38px;
+	
+	color: black;
+}
+.edititem{
+	font-family: 'Hahmlet', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 38px;
+	
+	color: black;
+	padding-right: 40px;
+	padding-left: 10px;
+}
+.edititem1{
+	font-family: 'Hahmlet', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 38px;
+	
+	color: black;
+	border-color: #D9D9D9;
+	border-radius: 10px;
+	background-color: white;
+	text-align: center;
+}
+.dropdown-menu li{
+	display: inline-block; 
+}
+
+.id1{
+	
+	
+	font-family: 'Hahmlet', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 36.5px;
+	
+	color: black;
+}
+
+.bd{
+	height: 50px;
+	border: solid;
+	border-width: thin;
+	border-color: #E6E6E6;
+	
+}
