@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>리디 홈페이지</title>
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	  <link rel="stylesheet" href="../css/bookListcss.css" />	  	  	
+</head>	
+ <body>
+ 
+	 <div class="container-fluid">
+		 <div style="border-bottom: solid; height: 35px; border-width: 3px; border-color:#F5F5F5;">
+		 	<div class="container bodyd">
+				<div class="row align-items-center">
+					<div class="col" style="padding-top:6px;">
+						<a class="heading" href="" >도서</a >
+						<a class="heading float-end" href="../member/loginForm.html">&nbsp;<b>로그인</b> </a>
+						<span class="heading float-end" href=""> ⦁&nbsp;</span>
+						<a class="heading float-end" href=""> <b>회원가입</b>&nbsp;&nbsp;</a>
+					</div>		 	
+			 	</div>
+		 	</div>
+		 </div>
+	 </div>
+	 
+	 <div class="container bodyd" >
+	 	<div class="row" >
+		 		<div class="col-4">
+		 			<div style="padding-top: 30px; display: inline-block;">
+					 	<a  href="" style="display: inline-block">	
+						 	<img src="https://active.ridibooks.com/navbar/icons/web/ridi.f50c563403f615565a7328888ba19f87.svg"  style="width:61px; height:23px; padding: 0px;">
+						 	<img src="https://active.ridibooks.com/navbar/icons/web/genre_books.24933faed881f7e79f1f8d5f0c529370.svg" style="width:122px; height: 40px; padding: 4px;">
+					 	</a>
+					 </div>
+				</div>
+			
+				<div class="col-8 justify-content-end d-flex" style="padding-top: 20px;">
+				 		<nav  style="display: inline-block;">
+				 			<ul >
+				 				<li style="display: inline-block; padding-right: 40px;">
+				 					<form action="">
+				 						<input type="text" class="form-control inputclass" placeholder="" aria-label="First name" style="width:250px;">
+				 					</form>
+				 				</li>
+				 				<li style="display: inline-block;">
+				 					<a href="">
+				 						<i class="fa-solid fa-book-open fa-xl" style="width: 50px;"></i>
+				 					</a>
+				 				</li>
+				 				<li style="display: inline-block;">
+				 					<a href="">
+				 						<i class="fa-regular fa-user fa-xl" style="padding-top:30px;" "></i>
+				 					</a>
+				 				</li>
+						 	</ul>
+					 	</nav>
+				</div>
+		</div>
+		
+		<div class="row" style="padding-top: 30px;">
+			<div class="col">
+					<span class="bookhead">도서</span>
+					<a class="heading float-end" href="" style="padding-top: 15px; color: black;">
+						<i class="fa-solid fa-list"></i> 
+						<span class="category">&nbsp;카테고리&nbsp;</span>
+					</a>
+				<hr  style="background-color: #F5F5F5;">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<ul style="list-style: none; padding-left:0px;">
+					<li style="display: inline-block;">
+						<button class="recommend"><b>추천</b></button>
+					</li>
+					<li style="display: inline-block;">
+						<button class="best"><b>베스트</b></button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+				  <div class="carousel-indicators">
+				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				  </div>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <a href=""><img src="../image/cat2.png" class="d-block" alt="..." style="width:1150px; height: 400px;"></a>
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>First slide label</h5>
+				        <p>Some representative placeholder content for the first slide.</p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://active.ridibooks.com/ridibooks_banner/1658889670681_MjIwNzI1.jpg" class="d-block" alt="..." style="width:1150px; height:400px">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5 style="text-align: left;">Second slide label</h5>
+				        <p>Some representative placeholder content for the second slide.</p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://active.ridibooks.com/ridibooks_banner/1657785873881_MjIwNzA3.jpg" class="d-block" alt="..." style="width:1150px; height: 400px;">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>Third slide label</h5>
+				        <p>Some representative placeholder content for the third slide.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="d-flex col justify-content-center" style="width:1150px; height: 94px; padding-top:30px;">
+				<a href="">
+					<img src="../image/n1.png" alt="" style="width: 70px; height: 70px; margin-right: 20px; margin-left: 20px;"/><br />
+					<span class="d-flex justify-content-center menuicon">신간</span>
+				</a>
+
+				<a href="">
+					<img src="../image/best.jpg" alt="" style="width: 70px; height: 70px; margin-right: 20px; margin-left: 20px;" />
+					<span class="d-flex justify-content-center menuicon">베스트셀러</span>
+				</a>
+				<a href="">
+					<img src="../image/weeklybest.png" alt="" style="width: 70px; height: 70px; margin-right: 20px; margin-left: 20px;"/>
+					<span class="d-flex justify-content-center menuicon">위클리베스트</span>
+				</a>
+			</div>
+		</div>
+		<br />
+		<br />
+		
+		<section> 오늘 리디의 발견</section>
+		
+		<div class="row">
+			<div class="col">
+				<div id="slider" style="padding-top: 30px;">
+								<div>
+									<div style="text-align:center; background: linear-gradient(#ffffff 50%, #3498db  50%); border-radius: 10px; ">
+										<img src="https://img.ridicdn.net/cover/3120000561/large#1" alt="" class="imgslide" style="width: 104px; height: 150px;"/>
+										<br />
+									</div>
+										<div style="background-color: white;">dfd</div>
+										<div style="background-color: white;">dfd</div>
+										<div style="background-color: white;">dfd</div>
+								</div>
+								<div>
+									<div style="text-align:center; background: linear-gradient(#ffffff 50%, #3498db  50%); border-radius: 10px; ">
+										<img src="https://img.ridicdn.net/cover/3120000561/large#1" alt="" class="imgslide" style="width: 104px; height: 150px;"/>
+										<br />
+									</div>
+										<div style="background-color: white;">dfd</div>
+										<div style="background-color: white;">dfd</div>
+								</div>
+								<div>
+									<div style="text-align:center; background: linear-gradient(#ffffff 50%, #3498db  50%); border-radius: 10px; ">
+										<img src="https://img.ridicdn.net/cover/3120000561/large#1" alt="" class="imgslide" style="width: 104px; height: 150px;"/>
+										<br />
+									</div>
+										<div style="background-color: white;">dfd</div>
+										<div style="background-color: white;">dfd</div>
+								</div>
+								<div>
+									<div style="text-align:center; background: linear-gradient(#ffffff 50%, #3498db  50%); border-radius: 10px; ">
+										<img src="https://img.ridicdn.net/cover/3120000561/large#1" alt="" class="imgslide" style="width: 104px; height: 150px;"/>
+										<br />
+									</div>
+										<div style="background-color: white;">dfd</div>
+										<div style="background-color: white;">dfd</div>
+								</div>
+								<div>
+									<div style="text-align:center; background: linear-gradient(#ffffff 50%, #3498db  50%); border-radius: 10px; ">
+										<img src="https://img.ridicdn.net/cover/3120000561/large#1" alt="" class="imgslide" style="width: 104px; height: 150px;"/>
+										<br />
+									</div>
+										<div style="background-color: white;">dfd</div>
+										<div style="background-color: white;">dfd</div>
+								</div>
+								<div>
+									<div style="text-align:center; background: linear-gradient(#ffffff 50%, #3498db  50%); border-radius: 10px; ">
+										<img src="https://img.ridicdn.net/cover/3120000561/large#1" alt="" class="imgslide" style="width: 104px; height: 150px;"/>
+										<br />
+									</div>
+										<div style="background-color: white;">dfd</div>
+										<div style="background-color: white;">dfd</div>
+								</div>
+								<div>
+									<div style="text-align:center; background: linear-gradient(#ffffff 50%, #3498db  50%); border-radius: 10px; ">
+										<img src="https://img.ridicdn.net/cover/3120000561/large#1" alt="" class="imgslide" style="width: 104px; height: 150px;"/>
+										<br />
+									</div>
+										<div style="background-color: white;">dfd</div>
+										<div style="background-color: white;">dfd</div>
+								</div>
+								
+							
+				</div>
+				
+				<div class="button-box">
+				    <a href="#" onclick="slider.prev()" class="prev"><i class="fas fa-chevron-left"></i></a>
+				    <a href="#" onclick="slider.next()" class="next"><i class="fas fa-chevron-right "></i></a>
+				 </div>
+			</div>
+		</div>
+	</div>
+	 
+	 
+	  
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/06cf56417a.js" crossorigin="anonymous"></script>
+ <script src="slideShow.js"></script>
+
+</body>
+</html>
